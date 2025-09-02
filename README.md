@@ -1,39 +1,39 @@
-# Portfólio
+# Portfolio
 
-Site de portfólio simples e estático.
+Simple static portfolio website.
 
-## Sobre
-Este projeto é uma página HTML estática para apresentar seu portfólio. Ideal para publicar rapidamente no GitHub Pages, Netlify ou Vercel.
+## About
+This project is a static HTML page to showcase your portfolio. It is ideal for quick deployment to GitHub Pages, Netlify, or Vercel.
 
-## Pré-requisitos
-- Qualquer navegador moderno
-- Opcional: um servidor HTTP simples para desenvolvimento local
+## Prerequisites
+- Any modern web browser
+- Optional: a simple HTTP server for local development
 
-## Como usar
-1. Abra o arquivo `index.html` diretamente no navegador; ou
-2. Sirva localmente com um servidor estático, por exemplo:
-   - Python 3: `python3 -m http.server 5500` e acesse `http://localhost:5500`
-   - Node (http-server): `npx http-server -p 5500` e acesse `http://localhost:5500`
+## How to run
+1. Open `index.html` directly in your browser; or
+2. Serve locally with a static server, for example:
+   - Python 3: `python3 -m http.server 5500` then visit `http://localhost:5500`
+   - Node (http-server): `npx http-server -p 5500` then visit `http://localhost:5500`
 
-## Estrutura do projeto
+## Project structure
 ```
-/                      # raiz do projeto
-├── index.html         # página principal
-└── images/            # assets de imagem
+/                      # project root
+├── index.html         # main page
+└── images/            # image assets
 ```
 
-## Personalização
-- Edite `index.html` para alterar conteúdo, textos e links.
-- Substitua imagens em `images/` conforme necessário.
-- Recomenda-se otimizar imagens para a web (formato e tamanho).
+## Customization
+- Edit `index.html` to change content, copy, and links.
+- Replace images in `images/` as needed.
+- It is recommended to optimize images for the web (format and size).
 
-## Deploy rápido
-- GitHub Pages: coloque o conteúdo na branch `main` (ou `docs`) e habilite Pages nas configurações do repositório.
-- Netlify/Vercel: importe o repositório e selecione deploy como site estático (sem build).
+## Quick deploy
+- GitHub Pages: push the content to the `main` (or `docs`) branch and enable Pages in the repository settings.
+- Netlify/Vercel: import the repository and deploy as a static site (no build step required).
 
-## Licença
-Este projeto é de uso pessoal. Adapte conforme suas necessidades.
+## License
+This is a personal-use project. Adapt as needed.
 
-## Contato
-- Autor: Max Mendes
-- Atualize este README com suas redes e email.
+## Contact
+- Author: Max Mendes
+- Update this README with your social links and email.
