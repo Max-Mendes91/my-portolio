@@ -1,24 +1,15 @@
+const menuBtn = document.getElementById("menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+const mobileLinks = document.querySelectorAll("#mobile-menu a");
 
-const mobileMenu = document.getElementById("mobile-menu")
+// Toggle mobile menu
+menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+});
 
-function toggleButton() {
-    //console.log(mobileMenu.classList); // arr ['ábsolute',"hidden", etc mais classes deste elemento]
-
-    // mobileMenu.classList.forEach(element => {
-    //     console.log(element)
-
-    //     if (element === "hidden") {
-    //         mobileMenu.classList.remove("hidden")
-    //     } else {
-    //         mobileMenu.classList.add("hidden")
-    //     }
-    // });
-
-    // faz o mesmo q em cima
-    if (mobileMenu.classList.contains("hidden")) {
-        mobileMenu.classList.remove("hidden")
-    } else {
-        mobileMenu.classList.add("hidden")
-    }
-
-}
+// Close mobile menu when a link is clicked
+mobileLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+    });
+});
