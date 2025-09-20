@@ -58,7 +58,7 @@
 <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 
 
-    <section class="flex flex-col justify-center">
+    <section  id="hero" class="flex flex-col justify-center">
         <h1 class="text-4xl sm:text-5xl font-bold leading-tight">
             Hello, I'm <br>
             <span class="text-purple-600">Max Mendes</span>
@@ -96,8 +96,8 @@
         <img class="w-full max-w-sm rounded shadow-lg object-cover" src="./images/max.png" alt="Imagem de pessoa">
     </section>
 </main>
-
-<section
+  <!-- --------ABout me------- -->
+<section id="about"
     class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center bg-white bg-opacity-50 shadow-2xl rounded-2xl my-20">
 
     <div class="relative flex justify-center">
@@ -148,7 +148,7 @@
     </div>
 </section>
 
-<section class="max-w-7xl mx-auto w-full p-6 flex flex-col md:flex-row items-center gap-12">
+<section id="work-process" class="max-w-7xl mx-auto w-full p-6 flex flex-col md:flex-row items-center gap-12">
     <!-- Left text -->
     <div class="md:w-1/2">
         <h1 class="text-4xl sm:text-5xl font-bold leading-tight mb-6">Work Process</h1>
@@ -212,13 +212,13 @@
 
 
 <!-- TITLE FOR Portfolio -->
-<section class="max-w-7xl mx-auto w-full p-4 text-center">
+<section id="portfolio-title" class="max-w-7xl mx-auto w-full p-4 text-center">
     <h1 class="text-4xl font-bold mb-5 mt-20">Portfolio</h1>
     <p class="text-gray-500 max-w-2xl mx-auto mb-10">
         There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.
     </p>
 </section>
-<section class="w-full  flex items-center justify-center bg-gray-100">
+<section id="portfolio" class="w-full  flex items-center justify-center bg-gray-100">
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mt-10">
 
 
@@ -295,7 +295,7 @@
 </section>
 
 <!-- CLIENT CONTACT SECTION -->
-<section class="max-w-7xl mx-auto w-full p-4 text-center bg-black mt-20">
+<section id="cta" class="max-w-7xl mx-auto w-full p-4 text-center bg-black mt-20">
     <div class="max-w-2xl mx-auto">
         <h1 class="text-4xl sm:text-5xl font-bold leading-tight mb-6 text-white mt-10">
             Do you have a project idea?<br>Let's discuss your project!
@@ -315,7 +315,7 @@
 
 
 <!-- BLOG SECTION -->
-<section class="w-full bg-gray-100 py-16">
+<section id="blog" class="w-full bg-gray-100 py-16">
     <!-- Heading block -->
     <div class="max-w-7xl mx-auto text-center px-4">
         <h1 class="text-4xl font-bold mb-5">Blog</h1>
@@ -368,7 +368,7 @@
 <!-- Descreption of what i do  -->
 
 
-<section class="max-w-7xl mx-auto w-full p-4 flex flex-col md:flex-row gap-8">
+<section id="services" class="max-w-7xl mx-auto w-full p-4 flex flex-col md:flex-row gap-8">
     <!-- Left side -->
     <div class="md:w-1/2">
         <h1 class="text-4xl font-bold mb-5 mt-20">What I do ?</h1>
@@ -415,21 +415,37 @@
 
 <!-- Clients Section -->
 <section id="clients" class="max-w-7xl mx-auto w-full p-8 text-center">
-    <h2 class="text-3xl font-bold mb-8">Happy Clients</h2>
-    <div class="flex flex-wrap items-center justify-center gap-8">
-        <img src="logo1.png" alt="Client 1">
-        <img src="logo2.png" alt="Client 2">
-        <img src="logo3.png" alt="Client 3">
-        <img src="logo3.png" alt="Client 3">
-        <img src="logo3.png" alt="Client 3">
-        <!-- Add more logos -->
+    <h1 class="text-3xl sm:text-4xl font-bold mb-6">Happy Clients</h1>
+    <p class="text-gray-600 text-base sm:text-lg leading-relaxed mb-12">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse earum nihil id libero ut molestiae cumque quis
+        accusamus! Quasi, voluptatibus! Soluta aliquam aspernatur placeat eveniet totam deserunt odio neque quo?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, omnis temporibus aliquid earum nam eos fugiat,
+        maxime exercitationem, quae velit ducimus quos modi hic illum animi voluptatem? Illum, voluptatum ipsam.
+    </p>
+
+
+    <!-- Carousel WILL BE USED TO MAKE IMAGE IN INFINIT LOOP -->
+    <div class="flex flex-wrap items-center justify-center gap-8 mt-20 mb-10">
+        <img src="./images/google.png" alt="Google" class="h-12 w-auto object-contain">
+        <img src="./images/social.png" alt="Amazon" class="h-12 w-auto object-contain">
+        <img src="./images/netflix.png" alt="Netflix" class="h-12 w-auto object-contain">
+        <img src="./images/shield.png" alt="Brave" class="h-12 w-auto object-contain">
+        <img src="./images/linkedin (1).png" alt="LinkedIn" class="h-12 w-auto object-contain">
     </div>
 </section>
 
 <!-- Testimonials Section -->
 <section id="testimonials" class="max-w-7xl mx-auto w-full p-8 text-center">
     <h2 class="text-3xl font-bold mb-8">Testimonials</h2>
-    <div class="grid md:grid-cols-2 gap-8">
+    <div class="grid md:grid-cols-2 gap-8 mt-10 mb-10">
+        <article class="bg-white p-6 rounded-lg shadow">
+            <p class="text-gray-600 mb-4">"Great to work with, very professional."</p>
+            <h4 class="font-semibold">- Client Name</h4>
+        </article>
+        <article class="bg-white p-6 rounded-lg shadow">
+            <p class="text-gray-600 mb-4">"Great to work with, very professional."</p>
+            <h4 class="font-semibold">- Client Name</h4>
+        </article>
         <article class="bg-white p-6 rounded-lg shadow">
             <p class="text-gray-600 mb-4">"Great to work with, very professional."</p>
             <h4 class="font-semibold">- Client Name</h4>
@@ -455,7 +471,7 @@
             <!-- Info Cards -->
             <div class="space-y-4">
                 <div class="bg-white p-4 rounded-lg shadow flex items-center gap-4">
-                    <span class="text-purple-600 text-2xl">📍</span>
+                    <img src="./images/location.png" alt="Location" class="h-12 w-auto object-contain">
                     <div>
                         <h3 class="font-semibold">Location</h3>
                         <p class="text-gray-600">Czestochowa, Poland</p>
@@ -463,7 +479,7 @@
                 </div>
 
                 <div class="bg-white p-4 rounded-lg shadow flex items-center gap-4">
-                    <span class="text-purple-600 text-2xl">📞</span>
+                    <img src="./images/telephone.png" alt="telephone" class="h-12 w-auto object-contain">
                     <div>
                         <h3 class="font-semibold">Phone</h3>
                         <p class="text-gray-600">+48 502-742-941</p>
@@ -471,7 +487,7 @@
                 </div>
 
                 <div class="bg-white p-4 rounded-lg shadow flex items-center gap-4">
-                    <span class="text-purple-600 text-2xl">✉️</span>
+                    <img src="./images/mail.png" alt="Email" class="h-12 w-auto object-contain">
                     <div>
                         <h3 class="font-semibold">Email</h3>
                         <p class="text-gray-600">maxmendesnoah1991@gmail.com</p>
@@ -498,7 +514,7 @@
 </section>
 
 
-<!-- Footer -->
+
 <footer id="footer" class="bg-gray-900 text-gray-400 py-6">
     <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
         <p>&copy; 2025 Max Mendes. All rights reserved.</p>
