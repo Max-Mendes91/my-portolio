@@ -346,6 +346,13 @@
             <h2 class="text-lg font-semibold mt-1">Project Title</h2>
             <p class="text-gray-600 text-sm mt-1">This is a paragraph describing the card content</p>
         </article>
+
+        <article class="bg-white rounded-lg shadow-md overflow-hidden p-4 w-72">
+            <img src="image.jpg" alt="Descriptive text" class="w-full h-40 object-cover rounded-md">
+            <p class="text-sm text-purple-500 mt-2">Product Admin Dashboard</p>
+            <h2 class="text-lg font-semibold mt-1">Project Title</h2>
+            <p class="text-gray-600 text-sm mt-1">This is a paragraph describing the card content</p>
+        </article>
     </div>
 
     <!-- Carousel dots -->
@@ -404,7 +411,117 @@
             </article>
     </div>
 </section>
-    </body>
-    <script src="script.js"></script>
+
+
+<!-- Clients Section -->
+<section id="clients" class="max-w-7xl mx-auto w-full p-8 text-center">
+    <h2 class="text-3xl font-bold mb-8">Happy Clients</h2>
+    <div class="flex flex-wrap items-center justify-center gap-8">
+        <img src="logo1.png" alt="Client 1">
+        <img src="logo2.png" alt="Client 2">
+        <img src="logo3.png" alt="Client 3">
+        <img src="logo3.png" alt="Client 3">
+        <img src="logo3.png" alt="Client 3">
+        <!-- Add more logos -->
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="max-w-7xl mx-auto w-full p-8 text-center">
+    <h2 class="text-3xl font-bold mb-8">Testimonials</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+        <article class="bg-white p-6 rounded-lg shadow">
+            <p class="text-gray-600 mb-4">"Great to work with, very professional."</p>
+            <h4 class="font-semibold">- Client Name</h4>
+        </article>
+        <article class="bg-white p-6 rounded-lg shadow">
+            <p class="text-gray-600 mb-4">"Delivered on time and exceeded expectations."</p>
+            <h4 class="font-semibold">- Client Name</h4>
+        </article>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="bg-gray-50 py-16">
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12">
+
+        <!-- Left side: Info + Cards -->
+        <div>
+            <h2 class="text-3xl font-bold mb-6">Let’s Discuss Your Project</h2>
+            <p class="text-gray-600 mb-8">
+                Feel free to reach out with your project idea. I’ll be happy to discuss and help bring it to life.
+            </p>
+
+            <!-- Info Cards -->
+            <div class="space-y-4">
+                <div class="bg-white p-4 rounded-lg shadow flex items-center gap-4">
+                    <span class="text-purple-600 text-2xl">📍</span>
+                    <div>
+                        <h3 class="font-semibold">Location</h3>
+                        <p class="text-gray-600">Czestochowa, Poland</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg shadow flex items-center gap-4">
+                    <span class="text-purple-600 text-2xl">📞</span>
+                    <div>
+                        <h3 class="font-semibold">Phone</h3>
+                        <p class="text-gray-600">+48 502-742-941</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg shadow flex items-center gap-4">
+                    <span class="text-purple-600 text-2xl">✉️</span>
+                    <div>
+                        <h3 class="font-semibold">Email</h3>
+                        <p class="text-gray-600">maxmendesnoah1991@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right side: Form -->
+        <form class="bg-white p-8 rounded-lg shadow flex flex-col gap-4">
+            <input type="text" placeholder="Name"
+                class="border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-purple-600">
+            <input type="email" placeholder="Email"
+                class="border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-purple-600">
+            <textarea placeholder="Message" rows="4"
+                class="border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-purple-600"></textarea>
+            <button type="submit"
+                class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium transition shadow-md">
+                Send Message
+            </button>
+        </form>
+
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer id="footer" class="bg-gray-900 text-gray-400 py-6">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+        <p>&copy; 2025 Max Mendes. All rights reserved.</p>
+
+        <div class="flex gap-6 mt-4 md:mt-0">
+            <a href="#" class="flex items-center gap-2 hover:text-white">
+                <img src="./images/twitter (1).png" alt="Twitter" class="h-5 w-5">
+                Twitter
+            </a>
+            <a href="#" class="flex items-center gap-2 hover:text-white">
+                <img src="./images/linkedin.png" alt="LinkedIn" class="h-5 w-5">
+                LinkedIn
+            </a>
+            <a href="#" class="flex items-center gap-2 hover:text-white">
+                <img src="./images/github.png" alt="GitHub" class="h-5 w-5">
+                GitHub
+            </a>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+<script src="script.js"></script>
 
 </html>
