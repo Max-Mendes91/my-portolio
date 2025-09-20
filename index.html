@@ -58,7 +58,7 @@
 <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 
 
-    <section  id="hero" class="flex flex-col justify-center">
+    <section id="hero" class="flex flex-col justify-center">
         <h1 class="text-4xl sm:text-5xl font-bold leading-tight">
             Hello, I'm <br>
             <span class="text-purple-600">Max Mendes</span>
@@ -96,7 +96,7 @@
         <img class="w-full max-w-sm rounded shadow-lg object-cover" src="./images/max.png" alt="Imagem de pessoa">
     </section>
 </main>
-  <!-- --------ABout me------- -->
+<!-- --------ABout me------- -->
 <section id="about"
     class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center bg-white bg-opacity-50 shadow-2xl rounded-2xl my-20">
 
@@ -435,22 +435,22 @@
 </section>
 
 <!-- Testimonials Section will use some effect to make the testimonials move when hoover with mouse-->
-<section id="testimonials" class="max-w-7xl mx-auto w-full p-8 text-center mt-10">
+<section id="testimonials" class="max-w-7xl mx-auto w-full p-8 text-center mt-10 ">
     <h2 class="text-3xl font-bold mb-8">Testimonials</h2>
     <div class="grid md:grid-cols-2 gap-8 mt-10 mb-10">
-        <article class="bg-white p-6 rounded-lg shadow">
+        <article class="bg-white p-6 rounded-lg shadow-2xl">
             <p class="text-gray-600 mb-4">"Great to work with, very professional."</p>
             <h4 class="font-semibold">- Client Name</h4>
         </article>
-        <article class="bg-white p-6 rounded-lg shadow">
+        <article class="bg-white p-6 rounded-lg shadow-2xl">
             <p class="text-gray-600 mb-4">"Great to work with, very professional."</p>
             <h4 class="font-semibold">- Client Name</h4>
         </article>
-        <article class="bg-white p-6 rounded-lg shadow">
+        <article class="bg-white p-6 rounded-lg shadow-2xl">
             <p class="text-gray-600 mb-4">"Great to work with, very professional."</p>
             <h4 class="font-semibold">- Client Name</h4>
         </article>
-        <article class="bg-white p-6 rounded-lg shadow">
+        <article class="bg-white p-6 rounded-lg shadow-2xl">
             <p class="text-gray-600 mb-4">"Delivered on time and exceeded expectations."</p>
             <h4 class="font-semibold">- Client Name</h4>
         </article>
@@ -462,7 +462,7 @@
     <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12">
 
         <!-- Left side: Info + Cards -->
-        <div>
+        <div class="md:translate-y-10 py-16 bg-white rounded-lg p-8 shadow-2xl">
             <h2 class="text-3xl font-bold mb-6">Let’s Discuss Your Project</h2>
             <p class="text-gray-600 mb-8">
                 Feel free to reach out with your project idea. I’ll be happy to discuss and help bring it to life.
@@ -470,7 +470,8 @@
 
             <!-- Info Cards -->
             <div class="space-y-4">
-                <div class="bg-white p-4 rounded-lg shadow flex items-center gap-4 hover:bg-purple-200 transition shadow-md">
+                <div
+                    class="bg-white p-4 rounded-lg shadow flex items-center gap-4 hover:bg-purple-200 transition shadow-md">
                     <img src="./images/location.png" alt="Location" class="h-12 w-auto object-contain">
                     <div>
                         <h3 class="font-semibold">Location</h3>
@@ -478,7 +479,8 @@
                     </div>
                 </div>
 
-                <div class="bg-white p-4 rounded-lg shadow flex items-center gap-4 hover:bg-purple-200 transition shadow-md">
+                <div
+                    class="bg-white p-4 rounded-lg shadow flex items-center gap-4 hover:bg-purple-200 transition shadow-md">
                     <img src="./images/telephone.png" alt="telephone" class="h-12 w-auto object-contain">
                     <div>
                         <h3 class="font-semibold">Phone</h3>
@@ -486,7 +488,8 @@
                     </div>
                 </div>
 
-                <div class="bg-white p-4 rounded-lg shadow flex items-center gap-4 hover:bg-purple-200 transition shadow-md">
+                <div
+                    class="bg-white p-4 rounded-lg shadow flex items-center gap-4 hover:bg-purple-200 transition shadow-md">
                     <img src="./images/mail.png" alt="Email" class="h-12 w-auto object-contain">
                     <div>
                         <h3 class="font-semibold">Email</h3>
@@ -497,13 +500,16 @@
         </div>
 
         <!-- Right side: Form -->
-        <form class="bg-white p-8 rounded-lg shadow flex flex-col gap-4">
-            <input type="text" placeholder="Name"
-                class="border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-purple-600">
+        <form class="bg-white p-8 rounded-lg shadow flex flex-col gap-4 md:translate-y-10 shadow-2xl">
+            <p class="text-gray-600 mt-10 mb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quaerat earum ducimus, 
+                repellat eveniet eum est consequuntur possimus suscipit quibusdam commodi facere odit similique, 
+            </p>
+            <input type=" text" placeholder="Name"
+            class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-600">
             <input type="email" placeholder="Email"
-                class="border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-purple-600">
+                class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-600">
             <textarea placeholder="Message" rows="4"
-                class="border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-purple-600"></textarea>
+                class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-600"></textarea>
             <button type="submit"
                 class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium transition shadow-md">
                 Send Message
