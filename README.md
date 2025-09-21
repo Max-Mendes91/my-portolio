@@ -36,4 +36,4 @@ This is a personal-use project. Adapt as needed.
 
 ## Contact
 - Author: Max Mendes
-- Update this README with your social links and email.
+- https://www.linkedin.com/in/max-mendes-776ab5212/
