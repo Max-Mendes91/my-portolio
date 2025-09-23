@@ -10,395 +10,398 @@
 </head>
 
 <body class="bg-gray-100">
-<header class="sticky top-0 z-50 bg-white shadow-md">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
-        <!-- Logo -->
-        <div class="text-xl font-bold text-gray-800">
-            Max
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+            <!-- Logo -->
+            <div class="text-xl font-bold text-gray-800">
+                Max
+            </div>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:block">
+                <ul class="flex items-center gap-6 text-gray-500 font-semibold">
+                    <li><a href="#hero" class="hover:text-purple-600 transition">Home</a></li>
+                    <li><a href="#about" class="hover:text-purple-600 transition">About</a></li>
+                    <li><a href="#work-process" class="hover:text-purple-600 transition">Work Process</a></li>
+                    <li><a href="#portfolio" class="hover:text-purple-600 transition">Portfolio</a></li>
+                    <li><a href="#services" class="hover:text-purple-600 transition">Services</a></li>
+                    <li><a href="#clients" class="hover:text-purple-600 transition">Clients</a></li>
+                    <li><a href="#testimonials" class="hover:text-purple-600 transition">Testimonials</a></li>
+                    <li><a href="#blog" class="hover:text-purple-600 transition">Blog</a></li>
+                </ul>
+            </nav>
+            <div class="flex items-center gap-4">
+                <a href="#contact"
+                    class="bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded shadow-md transition">
+                    Contact
+                </a>
+
+                <!-- Mobile toggle button -->
+                <button id="menu-btn" class="md:hidden bg-gray-500 text-white px-3 py-2 rounded">
+                    ☰
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <nav id="mobile-menu"
+                class="hidden fixed inset-0 bg-gradient-to-b from-white/80 to-purple-200/90 backdrop-blur-md z-50 flex flex-col items-center justify-center gap-8 text-gray-800 text-lg font-semibold">
+                <a href="#hero" class="hover:text-purple-600 transition">Home</a>
+                <a href="#about" class="hover:text-purple-600 transition">About</a>
+                <a href="#work-process" class="hover:text-purple-600 transition">Work Process</a>
+                <a href="#portfolio" class="hover:text-purple-600 transition">Portfolio</a>
+                <a href="#services" class="hover:text-purple-600 transition">Services</a>
+                <a href="#clients" class="hover:text-purple-600 transition">Clients</a>
+                <a href="#testimonials" class="hover:text-purple-600 transition">Testimonials</a>
+                <a href="#blog" class="hover:text-purple-600 transition">Blog</a>
+                <button
+                    class="mt-4 bg-purple-500 hover:bg-purple-600 text-white px-6 py-2 rounded shadow-md transition">
+                    <a href="#contact">Contact</a>
+                </button>
+            </nav>
+    </header>
+
+
+    <!-- this size is for all sections of the page max-w-7xl mx-auto w-full md:w-auto p-4 -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+
+        <section id="hero" class="flex flex-col justify-center">
+            <h1 class="text-4xl sm:text-5xl font-bold leading-tight">
+                Hello, I'm <br>
+                <span class="text-purple-600">Max Mendes</span>
+            </h1>
+
+            <p class="mt-6 text-gray-600 text-base sm:text-lg">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum is simply dummy <span class="font-bold">text of the printing</span>.
+            </p>
+
+            <button
+                class="mt-8 self-start bg-purple-500 hover:bg-purple-600 text-white px-6 py-3 rounded shadow-md transition">
+                Hire Me
+            </button>
+
+
+            <div class="flex flex-col sm:flex-row gap-4 mt-10">
+                <p class="bg-purple-300 bg-opacity-50 p-4 text-center flex-1 rounded">
+                    <span class="font-bold text-lg">15Y.</span>
+                    <span class="block text-gray-700">Experience</span>
+                </p>
+                <p class="bg-purple-300 bg-opacity-50 p-4 text-center flex-1 rounded">
+                    <span class="font-bold text-lg">20+</span>
+                    <span class="block text-gray-700">Projects</span>
+                </p>
+                <p class="bg-purple-300 bg-opacity-50 p-4 text-center flex-1 rounded">
+                    <span class="font-bold text-lg">10+</span>
+                    <span class="block text-gray-700">Clients</span>
+                </p>
+            </div>
+        </section>
+
+
+        <div class="flex justify-center">
+            <img class="w-full max-w-sm rounded shadow-lg object-cover" src="./images/max.png" alt="Imagem de pessoa">
+        </div>
+    </main>
+    <!-- --------ABout me------- -->
+    <section id="about"
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center bg-white bg-opacity-50 shadow-2xl rounded-2xl my-20">
+
+        <div class="relative flex justify-center">
+            <img class="w-64 h-80 rounded-lg object-cover shadow-lg"
+                src="https://images.pexels.com/photos/8382592/pexels-photo-8382592.jpeg?auto=compress&cs=tinysrgb&w=400"
+                alt="Profile picture">
+
+
+            <div
+                class="flex flex-row p-3 gap-3 justify-center bg-white bg-opacity-90 absolute bottom-5 left-1/2 transform -translate-x-1/2 rounded-lg shadow-lg">
+                <a href="#" class="hover:scale-110 transition-transform">
+                    <img class="w-8 h-8" src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook" />
+                </a>
+                <a href="#" class="hover:scale-110 transition-transform">
+                    <img class="w-8 h-8" src="https://cdn-icons-png.flaticon.com/24/733/733558.png" alt="Instagram" />
+                </a>
+                <a href="#" class="hover:scale-110 transition-transform">
+                    <img class="w-8 h-8" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github" />
+                </a>
+            </div>
         </div>
 
-        <!-- Desktop Menu -->
-        <nav class="hidden md:block">
-            <ul class="flex items-center gap-6 text-gray-500 font-semibold">
-                <li><a href="#hero" class="hover:text-purple-600 transition">Home</a></li>
-                <li><a href="#about" class="hover:text-purple-600 transition">About</a></li>
-                <li><a href="#work-process" class="hover:text-purple-600 transition">Work Process</a></li>
-                <li><a href="#portfolio" class="hover:text-purple-600 transition">Portfolio</a></li>
-                <li><a href="#services" class="hover:text-purple-600 transition">Services</a></li>
-                <li><a href="#clients" class="hover:text-purple-600 transition">Clients</a></li>
-                <li><a href="#testimonials" class="hover:text-purple-600 transition">Testimonials</a></li>
-                <li><a href="#blog" class="hover:text-purple-600 transition">Blog</a></li>
-            </ul>
-        </nav>
-        <div class="flex items-center gap-4">
-            <a href="#contact"
-                class="bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded shadow-md transition">
-                Contact
-            </a>
 
-            <!-- Mobile toggle button -->
-            <button id="menu-btn" class="md:hidden bg-gray-500 text-white px-3 py-2 rounded">
-                ☰
-            </button>
+        <div class="flex flex-col justify-center text-left">
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-700 mb-6 leading-snug">
+                I am a professional
+                <span class="block text-purple-600">user experience designer</span>
+            </h2>
+
+            <p class="text-gray-500 text-base sm:text-lg leading-relaxed mb-8 max-w-md">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repellat itaque veniam dicta explicabo
+                ratione molestias ad tenetur reprehenderit! Qui ab earum quibusdam quidem aut in consequatur, similique
+                modi
+                excepturi?
+            </p>
+
+
+            <div class="flex flex-row gap-4">
+                <button
+                    class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium transition shadow-md">
+                    Click me
+                </button>
+                <button
+                    class="px-6 py-3 rounded-lg border-2 border-purple-300 text-purple-700 hover:bg-purple-50 font-medium transition">
+                    Download
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="work-process" class="max-w-7xl mx-auto w-full p-6 flex flex-col md:flex-row items-center gap-12">
+        <!-- Left text -->
+        <div class="md:w-1/2">
+            <h1 class="text-4xl sm:text-5xl font-bold leading-tight mb-6">Work Process</h1>
+            <p class="text-gray-600 text-base sm:text-lg mb-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nesciunt officiis laborum deleniti sed
+                repellendus blanditiis sapiente voluptate eveniet officia error numquam voluptas molestias.
+            </p>
+            <p class="text-gray-600 text-base sm:text-lg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nesciunt officiis laborum deleniti sed
+                repellendus blanditiis sapiente voluptate eveniet officia error numquam voluptas molestias.
+            </p>
         </div>
 
-        <!-- Mobile Menu -->
-        <nav id="mobile-menu"
-            class="hidden fixed inset-0 bg-gradient-to-b from-white/80 to-purple-200/90 backdrop-blur-md z-50 flex flex-col items-center justify-center gap-8 text-gray-800 text-lg font-semibold">
-            <a href="#hero" class="hover:text-purple-600 transition">Home</a>
-            <a href="#about" class="hover:text-purple-600 transition">About</a>
-            <a href="#work-process" class="hover:text-purple-600 transition">Work Process</a>
-            <a href="#portfolio" class="hover:text-purple-600 transition">Portfolio</a>
-            <a href="#services" class="hover:text-purple-600 transition">Services</a>
-            <a href="#clients" class="hover:text-purple-600 transition">Clients</a>
-            <a href="#testimonials" class="hover:text-purple-600 transition">Testimonials</a>
-            <a href="#blog" class="hover:text-purple-600 transition">Blog</a>
-            <button class="mt-4 bg-purple-500 hover:bg-purple-600 text-white px-6 py-2 rounded shadow-md transition">
-                <a href="#contact">Contact</a>
-            </button>
-        </nav>
-</header>
+        <!-- Right cards -->
+        <div class="md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-10">
+            <!-- Card 1 -->
+            <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition transform md:-translate-y-4">
+                <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-purple-500 mb-4">
+                    <img src="./images/calendar.png" alt="calendar" class="w-6 h-6">
+                </div>
+                <h2 class="font-semibold text-lg mb-2">1. Research</h2>
+                <p class="text-gray-600 text-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto ducimus sequi maiores.
+                </p>
+            </div>
 
+            <!-- Card 2 -->
+            <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition transform -translate-y-0">
+                <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-purple-300 mb-4">
+                    <img src="./images/statistical.png" alt="statistical" class="w-6 h-6">
+                </div>
+                <h2 class="font-semibold text-lg mb-2">2. Analyze</h2>
+                <p class="text-gray-600 text-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto ducimus sequi maiores.
+                </p>
+            </div>
 
-<!-- this size is for all sections of the page max-w-7xl mx-auto w-full md:w-auto p-4 -->
-<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <!-- Card 3 -->
+            <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition md:-translate-y-4">
+                <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-purple-300 mb-4">
+                    <img src="./images/edit.png" alt="edit" class="w-6 h-6">
+                </div>
+                <h2 class="font-semibold text-lg mb-2">3. Design</h2>
+                <p class="text-gray-600 text-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto ducimus sequi maiores.
+                </p>
+            </div>
 
-
-    <section id="hero" class="flex flex-col justify-center">
-        <h1 class="text-4xl sm:text-5xl font-bold leading-tight">
-            Hello, I'm <br>
-            <span class="text-purple-600">Max Mendes</span>
-        </h1>
-
-        <p class="mt-6 text-gray-600 text-base sm:text-lg">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum is simply dummy <span class="font-bold">text of the printing</span>.
-        </p>
-
-        <button
-            class="mt-8 self-start bg-purple-500 hover:bg-purple-600 text-white px-6 py-3 rounded shadow-md transition">
-            Hire Me
-        </button>
-
-
-        <div class="flex flex-col sm:flex-row gap-4 mt-10">
-            <p class="bg-purple-300 bg-opacity-50 p-4 text-center flex-1 rounded">
-                <span class="font-bold text-lg">15Y.</span>
-                <span class="block text-gray-700">Experience</span>
-            </p>
-            <p class="bg-purple-300 bg-opacity-50 p-4 text-center flex-1 rounded">
-                <span class="font-bold text-lg">20+</span>
-                <span class="block text-gray-700">Projects</span>
-            </p>
-            <p class="bg-purple-300 bg-opacity-50 p-4 text-center flex-1 rounded">
-                <span class="font-bold text-lg">10+</span>
-                <span class="block text-gray-700">Clients</span>
-            </p>
+            <!-- Card 4 -->
+            <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+                <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-purple-300 mb-4">
+                    <img src="./images/laptop.png" alt="laptop" class="w-6 h-6">
+                </div>
+                <h2 class="font-semibold text-lg mb-2">4. Launch</h2>
+                <p class="text-gray-600 text-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto ducimus sequi maiores.
+                </p>
+            </div>
         </div>
     </section>
 
 
-    <div class="flex justify-center">
-        <img class="w-full max-w-sm rounded shadow-lg object-cover" src="./images/max.png" alt="Imagem de pessoa">
-    </div>
-</main>
-<!-- --------ABout me------- -->
-<section id="about"
-    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center bg-white bg-opacity-50 shadow-2xl rounded-2xl my-20">
-
-    <div class="relative flex justify-center">
-        <img class="w-64 h-80 rounded-lg object-cover shadow-lg"
-            src="https://images.pexels.com/photos/8382592/pexels-photo-8382592.jpeg?auto=compress&cs=tinysrgb&w=400"
-            alt="Profile picture">
-
-
-        <div
-            class="flex flex-row p-3 gap-3 justify-center bg-white bg-opacity-90 absolute bottom-5 left-1/2 transform -translate-x-1/2 rounded-lg shadow-lg">
-            <a href="#" class="hover:scale-110 transition-transform">
-                <img class="w-8 h-8" src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook" />
-            </a>
-            <a href="#" class="hover:scale-110 transition-transform">
-                <img class="w-8 h-8" src="https://cdn-icons-png.flaticon.com/24/733/733558.png" alt="Instagram" />
-            </a>
-            <a href="#" class="hover:scale-110 transition-transform">
-                <img class="w-8 h-8" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github" />
-            </a>
+    <!-- TITLE FOR Portfolio -->
+    <!-- Combined Portfolio Section -->
+    <section id="portfolio" class="max-w-7xl mx-auto w-full p-4">
+        <!-- Title Section -->
+        <div class="text-center">
+            <h1 class="text-4xl font-bold mb-5 mt-20">Portfolio</h1>
+            <p class="text-gray-500 max-w-2xl mx-auto mb-10">
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                alteration.
+            </p>
         </div>
-    </div>
 
+        <!-- Projects Grid Section -->
+        <div class="w-full flex items-center justify-center bg-gray-100 rounded-lg p-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mt-10">
+                <!-- Project Card 1 -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden p-4">
+                    <img src="image.jpg" alt="Descriptive text" class="w-full h-40 object-cover rounded-md">
+                    <p class="text-sm text-purple-500 mt-2">Product Admin Dashboard</p>
+                    <h2 class="text-lg font-semibold mt-1">Project Title</h2>
+                    <p class="text-gray-600 text-sm mt-1">This is a paragraph describing the card content</p>
+                    <button
+                        class="mt-4 px-6 py-3 rounded-lg border-2 border-purple-300 text-purple-700 hover:bg-purple-200 font-medium transition">
+                        Case Study ➔
+                    </button>
+                </article>
 
-    <div class="flex flex-col justify-center text-left">
-        <h2 class="text-3xl sm:text-4xl font-bold text-gray-700 mb-6 leading-snug">
-            I am a professional
-            <span class="block text-purple-600">user experience designer</span>
-        </h2>
+                <!-- Project Card 2 -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden p-4">
+                    <img src="image.jpg" alt="Descriptive text" class="w-full h-40 object-cover rounded-md">
+                    <p class="text-sm text-purple-500 mt-2">Product Admin Dashboard</p>
+                    <h2 class="text-lg font-semibold mt-1">Project Title</h2>
+                    <p class="text-gray-600 text-sm mt-1">This is a paragraph describing the card content</p>
+                    <button
+                        class="mt-4 px-6 py-3 rounded-lg border-2 border-purple-300 text-purple-700 hover:bg-purple-50 font-medium transition">
+                        Case Study ➔
+                    </button>
+                </article>
 
-        <p class="text-gray-500 text-base sm:text-lg leading-relaxed mb-8 max-w-md">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repellat itaque veniam dicta explicabo
-            ratione molestias ad tenetur reprehenderit! Qui ab earum quibusdam quidem aut in consequatur, similique
-            modi
-            excepturi?
-        </p>
+                <!-- Project Card 3 -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden p-4">
+                    <img src="image.jpg" alt="Descriptive text" class="w-full h-40 object-cover rounded-md">
+                    <p class="text-sm text-purple-500 mt-2">Product Admin Dashboard</p>
+                    <h2 class="text-lg font-semibold mt-1">Project Title</h2>
+                    <p class="text-gray-600 text-sm mt-1">This is a paragraph describing the card content</p>
+                    <button
+                        class="mt-4 px-6 py-3 rounded-lg border-2 border-purple-300 text-purple-700 hover:bg-purple-50 font-medium transition">
+                        Case Study ➔
+                    </button>
+                </article>
 
+                <!-- Project Card 4 -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden p-4">
+                    <img src="image.jpg" alt="Descriptive text" class="w-full h-40 object-cover rounded-md">
+                    <p class="text-sm text-purple-500 mt-2">Product Admin Dashboard</p>
+                    <h2 class="text-lg font-semibold mt-1">Project Title</h2>
+                    <p class="text-gray-600 text-sm mt-1">This is a paragraph describing the card content</p>
+                    <button
+                        class="mt-4 px-6 py-3 rounded-lg border-2 border-purple-300 text-purple-700 hover:bg-purple-50 font-medium transition">
+                        Case Study ➔
+                    </button>
+                </article>
 
-        <div class="flex flex-row gap-4">
+                <!-- Project Card 5 -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden p-4">
+                    <img src="image.jpg" alt="Descriptive text" class="w-full h-40 object-cover rounded-md">
+                    <p class="text-sm text-purple-500 mt-2">Product Admin Dashboard</p>
+                    <h2 class="text-lg font-semibold mt-1">Project Title</h2>
+                    <p class="text-gray-600 text-sm mt-1">This is a paragraph describing the card content</p>
+                    <button
+                        class="mt-4 px-6 py-3 rounded-lg border-2 border-purple-300 text-purple-700 hover:bg-purple-50 font-medium transition">
+                        Case Study ➔
+                    </button>
+                </article>
+
+                <!-- Project Card 6 -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden p-4">
+                    <img src="image.jpg" alt="Descriptive text" class="w-full h-40 object-cover rounded-md">
+                    <p class="text-sm text-purple-500 mt-2">Product Admin Dashboard</p>
+                    <h2 class="text-lg font-semibold mt-1">Project Title</h2>
+                    <p class="text-gray-600 text-sm mt-1">This is a paragraph describing the card content</p>
+                    <button
+                        class="mt-4 px-6 py-3 rounded-lg border-2 border-purple-300 text-purple-700 hover:bg-purple-50 font-medium transition">
+                        Case Study ➔
+                    </button>
+                </article>
+
+                <!-- More Projects Button -->
+                <button
+                    class="col-span-full justify-self-center mt-6 bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium transition shadow-md">
+                    More Projects
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLIENT CONTACT SECTION -->
+    <section id="cta" class="max-w-7xl mx-auto w-full p-4 text-center bg-black mt-20 py-16 mb-20">
+        <div class="max-w-2xl mx-auto">
+            <h1 class="text-4xl sm:text-5xl font-bold leading-tight mb-6 text-white mt-10">
+                Do you have a project idea?<br>Let's discuss your project!
+            </h1>
+            <p class="text-gray-400 text-base">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. In sunt quis, blanditiis
+                sapiente soluta delectus? Excepturi,
+                illo, provident aliquam tempora id eaque maiores maxime,
+                ducimus quam neque nesciunt cum voluptatibus.
+            </p>
             <button
-                class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium transition shadow-md">
+                class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium transition shadow-md mt-10">
                 Click me
             </button>
+        </div>
+    </section>
+
+
+    <!-- BLOG SECTION -->
+    <section id="blog" class="w-full bg-gray-100 py-16">
+        <!-- Heading block -->
+        <div class="max-w-7xl mx-auto text-center px-4">
+            <h1 class="text-4xl font-bold mb-5">Blog</h1>
+            <p class="text-gray-500 max-w-2xl mx-auto mb-10">
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                alteration.
+            </p>
+        </div>
+
+        <!-- Cards blog will have a infinit scroll as well  -->
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-center gap-6 px-4">
+            <article class="bg-white rounded-lg shadow-md overflow-hidden p-4 w-72">
+                <img src="image.jpg" alt="Descriptive text" class="w-full h-40 object-cover rounded-md">
+                <p class="text-sm text-purple-500 mt-2">Product Admin Dashboard</p>
+                <h2 class="text-lg font-semibold mt-1">Project Title</h2>
+                <p class="text-gray-600 text-sm mt-1">This is a paragraph describing the card content</p>
+            </article>
+
+            <article class="bg-white rounded-lg shadow-md overflow-hidden p-4 w-72">
+                <img src="image.jpg" alt="Descriptive text" class="w-full h-40 object-cover rounded-md">
+                <p class="text-sm text-purple-500 mt-2">Product Admin Dashboard</p>
+                <h2 class="text-lg font-semibold mt-1">Project Title</h2>
+                <p class="text-gray-600 text-sm mt-1">This is a paragraph describing the card content</p>
+            </article>
+
+            <article class="bg-white rounded-lg shadow-md overflow-hidden p-4 w-72">
+                <img src="image.jpg" alt="Descriptive text" class="w-full h-40 object-cover rounded-md">
+                <p class="text-sm text-purple-500 mt-2">Product Admin Dashboard</p>
+                <h2 class="text-lg font-semibold mt-1">Project Title</h2>
+                <p class="text-gray-600 text-sm mt-1">This is a paragraph describing the card content</p>
+            </article>
+
+            <article class="bg-white rounded-lg shadow-md overflow-hidden p-4 w-72">
+                <img src="image.jpg" alt="Descriptive text" class="w-full h-40 object-cover rounded-md">
+                <p class="text-sm text-purple-500 mt-2">Product Admin Dashboard</p>
+                <h2 class="text-lg font-semibold mt-1">Project Title</h2>
+                <p class="text-gray-600 text-sm mt-1">This is a paragraph describing the card content</p>
+            </article>
+        </div>
+
+        <!-- Carousel dots -->
+        <div class="flex justify-center mt-8 space-x-2">
+            <span class="w-3 h-3 bg-purple-600 rounded-full"></span>
+            <span class="w-3 h-3 bg-gray-400 rounded-full"></span>
+            <span class="w-3 h-3 bg-gray-400 rounded-full"></span>
+        </div>
+    </section>
+
+
+
+    <!-- Descreption of what i do  -->
+
+
+    <section id="services" class="max-w-7xl mx-auto w-full p-4 flex flex-col md:flex-row gap-15 mb-10">
+        <!-- Left side -->
+        <div class="md:w-1/2">
+            <h1 class="text-4xl font-bold mb-5 mt-20">What I do ?</h1>
+            <p class="text-gray-600 text-base sm:text-lg mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloribus, veritatis qui.
+                Quia modi est omnis molestias sapiente, voluptas soluta maiores ab nostrum aut,
+                adipisci quidem obcaecati dolore. Saepe, obcaecati placeat.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum quos fuga eius dicta doloremque libero
+                culpa reiciendis eaque,
+                dolore consectetur quod aperiam eveniet, cumque unde deserunt vero natus sapiente iure.</p>
             <button
-                class="px-6 py-3 rounded-lg border-2 border-purple-300 text-purple-700 hover:bg-purple-50 font-medium transition">
-                Download
-            </button>
-        </div>
-    </div>
-</section>
-
-<section id="work-process" class="max-w-7xl mx-auto w-full p-6 flex flex-col md:flex-row items-center gap-12">
-    <!-- Left text -->
-    <div class="md:w-1/2">
-        <h1 class="text-4xl sm:text-5xl font-bold leading-tight mb-6">Work Process</h1>
-        <p class="text-gray-600 text-base sm:text-lg mb-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nesciunt officiis laborum deleniti sed
-            repellendus blanditiis sapiente voluptate eveniet officia error numquam voluptas molestias.
-        </p>
-        <p class="text-gray-600 text-base sm:text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nesciunt officiis laborum deleniti sed
-            repellendus blanditiis sapiente voluptate eveniet officia error numquam voluptas molestias.
-        </p>
-    </div>
-
-    <!-- Right cards -->
-    <div class="md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-10">
-        <!-- Card 1 -->
-        <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition transform md:-translate-y-4">
-            <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-purple-500 mb-4">
-                <img src="./images/calendar.png" alt="calendar" class="w-6 h-6">
-            </div>
-            <h2 class="font-semibold text-lg mb-2">1. Research</h2>
-            <p class="text-gray-600 text-sm">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto ducimus sequi maiores.
-            </p>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition transform -translate-y-0">
-            <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-purple-300 mb-4">
-                <img src="./images/statistical.png" alt="statistical" class="w-6 h-6">
-            </div>
-            <h2 class="font-semibold text-lg mb-2">2. Analyze</h2>
-            <p class="text-gray-600 text-sm">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto ducimus sequi maiores.
-            </p>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition md:-translate-y-4">
-            <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-purple-300 mb-4">
-                <img src="./images/edit.png" alt="edit" class="w-6 h-6">
-            </div>
-            <h2 class="font-semibold text-lg mb-2">3. Design</h2>
-            <p class="text-gray-600 text-sm">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto ducimus sequi maiores.
-            </p>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
-            <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-purple-300 mb-4">
-                <img src="./images/laptop.png" alt="laptop" class="w-6 h-6">
-            </div>
-            <h2 class="font-semibold text-lg mb-2">4. Launch</h2>
-            <p class="text-gray-600 text-sm">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto ducimus sequi maiores.
-            </p>
-        </div>
-    </div>
-</section>
-
-
-<!-- TITLE FOR Portfolio -->
-<!-- Combined Portfolio Section -->
-<section id="portfolio" class="max-w-7xl mx-auto w-full p-4">
-    <!-- Title Section -->
-    <div class="text-center">
-        <h1 class="text-4xl font-bold mb-5 mt-20">Portfolio</h1>
-        <p class="text-gray-500 max-w-2xl mx-auto mb-10">
-            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.
-        </p>
-    </div>
-
-    <!-- Projects Grid Section -->
-    <div class="w-full flex items-center justify-center bg-gray-100 rounded-lg p-8">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mt-10">
-            <!-- Project Card 1 -->
-            <article class="bg-white rounded-lg shadow-md overflow-hidden p-4">
-                <img src="image.jpg" alt="Descriptive text" class="w-full h-40 object-cover rounded-md">
-                <p class="text-sm text-purple-500 mt-2">Product Admin Dashboard</p>
-                <h2 class="text-lg font-semibold mt-1">Project Title</h2>
-                <p class="text-gray-600 text-sm mt-1">This is a paragraph describing the card content</p>
-                <button
-                    class="mt-4 px-6 py-3 rounded-lg border-2 border-purple-300 text-purple-700 hover:bg-purple-200 font-medium transition">
-                    Case Study ➔
-                </button>
-            </article>
-
-            <!-- Project Card 2 -->
-            <article class="bg-white rounded-lg shadow-md overflow-hidden p-4">
-                <img src="image.jpg" alt="Descriptive text" class="w-full h-40 object-cover rounded-md">
-                <p class="text-sm text-purple-500 mt-2">Product Admin Dashboard</p>
-                <h2 class="text-lg font-semibold mt-1">Project Title</h2>
-                <p class="text-gray-600 text-sm mt-1">This is a paragraph describing the card content</p>
-                <button
-                    class="mt-4 px-6 py-3 rounded-lg border-2 border-purple-300 text-purple-700 hover:bg-purple-50 font-medium transition">
-                    Case Study ➔
-                </button>
-            </article>
-
-            <!-- Project Card 3 -->
-            <article class="bg-white rounded-lg shadow-md overflow-hidden p-4">
-                <img src="image.jpg" alt="Descriptive text" class="w-full h-40 object-cover rounded-md">
-                <p class="text-sm text-purple-500 mt-2">Product Admin Dashboard</p>
-                <h2 class="text-lg font-semibold mt-1">Project Title</h2>
-                <p class="text-gray-600 text-sm mt-1">This is a paragraph describing the card content</p>
-                <button
-                    class="mt-4 px-6 py-3 rounded-lg border-2 border-purple-300 text-purple-700 hover:bg-purple-50 font-medium transition">
-                    Case Study ➔
-                </button>
-            </article>
-
-            <!-- Project Card 4 -->
-            <article class="bg-white rounded-lg shadow-md overflow-hidden p-4">
-                <img src="image.jpg" alt="Descriptive text" class="w-full h-40 object-cover rounded-md">
-                <p class="text-sm text-purple-500 mt-2">Product Admin Dashboard</p>
-                <h2 class="text-lg font-semibold mt-1">Project Title</h2>
-                <p class="text-gray-600 text-sm mt-1">This is a paragraph describing the card content</p>
-                <button
-                    class="mt-4 px-6 py-3 rounded-lg border-2 border-purple-300 text-purple-700 hover:bg-purple-50 font-medium transition">
-                    Case Study ➔
-                </button>
-            </article>
-
-            <!-- Project Card 5 -->
-            <article class="bg-white rounded-lg shadow-md overflow-hidden p-4">
-                <img src="image.jpg" alt="Descriptive text" class="w-full h-40 object-cover rounded-md">
-                <p class="text-sm text-purple-500 mt-2">Product Admin Dashboard</p>
-                <h2 class="text-lg font-semibold mt-1">Project Title</h2>
-                <p class="text-gray-600 text-sm mt-1">This is a paragraph describing the card content</p>
-                <button
-                    class="mt-4 px-6 py-3 rounded-lg border-2 border-purple-300 text-purple-700 hover:bg-purple-50 font-medium transition">
-                    Case Study ➔
-                </button>
-            </article>
-
-            <!-- Project Card 6 -->
-            <article class="bg-white rounded-lg shadow-md overflow-hidden p-4">
-                <img src="image.jpg" alt="Descriptive text" class="w-full h-40 object-cover rounded-md">
-                <p class="text-sm text-purple-500 mt-2">Product Admin Dashboard</p>
-                <h2 class="text-lg font-semibold mt-1">Project Title</h2>
-                <p class="text-gray-600 text-sm mt-1">This is a paragraph describing the card content</p>
-                <button
-                    class="mt-4 px-6 py-3 rounded-lg border-2 border-purple-300 text-purple-700 hover:bg-purple-50 font-medium transition">
-                    Case Study ➔
-                </button>
-            </article>
-
-            <!-- More Projects Button -->
-            <button
-                class="col-span-full justify-self-center mt-6 bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium transition shadow-md">
-                More Projects
-            </button>
-        </div>
-    </div>
-</section>
-
-<!-- CLIENT CONTACT SECTION -->
-<section id="cta" class="max-w-7xl mx-auto w-full p-4 text-center bg-black mt-20 py-16 mb-20">
-    <div class="max-w-2xl mx-auto">
-        <h1 class="text-4xl sm:text-5xl font-bold leading-tight mb-6 text-white mt-10">
-            Do you have a project idea?<br>Let's discuss your project!
-        </h1>
-        <p class="text-gray-400 text-base">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. In sunt quis, blanditiis
-            sapiente soluta delectus? Excepturi,
-            illo, provident aliquam tempora id eaque maiores maxime,
-            ducimus quam neque nesciunt cum voluptatibus.
-        </p>
-        <button
-            class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium transition shadow-md mt-10">
-            Click me
-        </button>
-    </div>
-</section>
-
-
-<!-- BLOG SECTION -->
-<section id="blog" class="w-full bg-gray-100 py-16">
-    <!-- Heading block -->
-    <div class="max-w-7xl mx-auto text-center px-4">
-        <h1 class="text-4xl font-bold mb-5">Blog</h1>
-        <p class="text-gray-500 max-w-2xl mx-auto mb-10">
-            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.
-        </p>
-    </div>
-
-    <!-- Cards blog will have a infinit scroll as well  -->
-    <div class="max-w-7xl mx-auto flex flex-wrap justify-center gap-6 px-4">
-        <article class="bg-white rounded-lg shadow-md overflow-hidden p-4 w-72">
-            <img src="image.jpg" alt="Descriptive text" class="w-full h-40 object-cover rounded-md">
-            <p class="text-sm text-purple-500 mt-2">Product Admin Dashboard</p>
-            <h2 class="text-lg font-semibold mt-1">Project Title</h2>
-            <p class="text-gray-600 text-sm mt-1">This is a paragraph describing the card content</p>
-        </article>
-
-        <article class="bg-white rounded-lg shadow-md overflow-hidden p-4 w-72">
-            <img src="image.jpg" alt="Descriptive text" class="w-full h-40 object-cover rounded-md">
-            <p class="text-sm text-purple-500 mt-2">Product Admin Dashboard</p>
-            <h2 class="text-lg font-semibold mt-1">Project Title</h2>
-            <p class="text-gray-600 text-sm mt-1">This is a paragraph describing the card content</p>
-        </article>
-
-        <article class="bg-white rounded-lg shadow-md overflow-hidden p-4 w-72">
-            <img src="image.jpg" alt="Descriptive text" class="w-full h-40 object-cover rounded-md">
-            <p class="text-sm text-purple-500 mt-2">Product Admin Dashboard</p>
-            <h2 class="text-lg font-semibold mt-1">Project Title</h2>
-            <p class="text-gray-600 text-sm mt-1">This is a paragraph describing the card content</p>
-        </article>
-
-        <article class="bg-white rounded-lg shadow-md overflow-hidden p-4 w-72">
-            <img src="image.jpg" alt="Descriptive text" class="w-full h-40 object-cover rounded-md">
-            <p class="text-sm text-purple-500 mt-2">Product Admin Dashboard</p>
-            <h2 class="text-lg font-semibold mt-1">Project Title</h2>
-            <p class="text-gray-600 text-sm mt-1">This is a paragraph describing the card content</p>
-        </article>
-    </div>
-
-    <!-- Carousel dots -->
-    <div class="flex justify-center mt-8 space-x-2">
-        <span class="w-3 h-3 bg-purple-600 rounded-full"></span>
-        <span class="w-3 h-3 bg-gray-400 rounded-full"></span>
-        <span class="w-3 h-3 bg-gray-400 rounded-full"></span>
-    </div>
-</section>
-
-
-
-<!-- Descreption of what i do  -->
-
-
-<section id="services" class="max-w-7xl mx-auto w-full p-4 flex flex-col md:flex-row gap-15 mb-10">
-    <!-- Left side -->
-    <div class="md:w-1/2">
-        <h1 class="text-4xl font-bold mb-5 mt-20">What I do ?</h1>
-        <p class="text-gray-600 text-base sm:text-lg mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Doloribus, veritatis qui.
-            Quia modi est omnis molestias sapiente, voluptas soluta maiores ab nostrum aut,
-            adipisci quidem obcaecati dolore. Saepe, obcaecati placeat.
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum quos fuga eius dicta doloremque libero
-            culpa reiciendis eaque,
-            dolore consectetur quod aperiam eveniet, cumque unde deserunt vero natus sapiente iure.</p>
-        <button
-            class="w-1/2 bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium transition shadow-md mt-10"">Clicke me 
+                class="w-1/2 bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium transition shadow-md mt-10"">Clicke me 
         </button>
     </div>
 
@@ -406,160 +409,162 @@
                                     <!-- right side -->
 
     <div class=" flex flex-col gap-4 md:w-1/2 mt-10">
-            <article class="bg-white p-4 rounded-lg shadow">
-                <h1 class="font-semibold text-lg mb-2">Some title </h1>
-                <p class="text-gray-600 text-base sm:text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing
-                    elit. Repellendus aspernatur esse quos nihil
-                    necessitatibus voluptatibus, corporis est iste! Saepe recusandae nihil architecto at eveniet
-                    reiciendis numquam eum suscipit laboriosam minima.</p>
+                <article class="bg-white p-4 rounded-lg shadow">
+                    <h1 class="font-semibold text-lg mb-2">Some title </h1>
+                    <p class="text-gray-600 text-base sm:text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Repellendus aspernatur esse quos nihil
+                        necessitatibus voluptatibus, corporis est iste! Saepe recusandae nihil architecto at eveniet
+                        reiciendis numquam eum suscipit laboriosam minima.</p>
+                </article>
+                <article class="bg-white p-4 rounded-lg shadow">
+                    <h1 class="font-semibold text-lg mb-2">Some title </h1>
+                    <p class="text-gray-600 text-base sm:text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Repellendus aspernatur esse quos nihil
+                        necessitatibus voluptatibus, corporis est iste! Saepe recusandae nihil architecto at eveniet
+                        reiciendis numquam eum suscipit laboriosam minima.</p>
+                </article>
+                <article class="bg-white p-4 rounded-lg shadow">
+                    <h1 class="font-semibold text-lg mb-2">Some title </h1>
+                    <p class="text-gray-600 text-base sm:text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Repellendus aspernatur esse quos nihil
+                        necessitatibus voluptatibus, corporis est iste! Saepe recusandae nihil architecto at eveniet
+                        reiciendis numquam eum suscipit laboriosam minima.</p>
+                </article>
+        </div>
+    </section>
+
+
+    <!-- Clients Section -->
+    <section id="clients" class="max-w-7xl mx-auto w-full p-8 text-center bg-gray-50 py-16">
+        <h1 class="text-3xl sm:text-4xl font-bold mb-6">Happy Clients</h1>
+        <p class="text-gray-600 text-base sm:text-lg leading-relaxed mb-12">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse earum nihil id libero ut molestiae cumque quis
+            accusamus! Quasi, voluptatibus! Soluta aliquam aspernatur placeat eveniet totam deserunt odio neque quo?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, omnis temporibus aliquid earum nam eos
+            fugiat,
+            maxime exercitationem, quae velit ducimus quos modi hic illum animi voluptatem? Illum, voluptatum ipsam.
+        </p>
+
+
+        <!-- Carousel WILL BE USED TO MAKE IMAGE IN INFINIT LOOP -->
+        <div class="flex flex-wrap items-center justify-center gap-8 mt-20 mb-10">
+            <img src="./images/google.png" alt="Google" class="h-12 w-auto object-contain">
+            <img src="./images/social.png" alt="Amazon" class="h-12 w-auto object-contain">
+            <img src="./images/netflix.png" alt="Netflix" class="h-12 w-auto object-contain">
+            <img src="./images/shield.png" alt="Brave" class="h-12 w-auto object-contain">
+            <img src="./images/linkedin (1).png" alt="LinkedIn" class="h-12 w-auto object-contain">
+        </div>
+    </section>
+
+    <!-- Testimonials Section will use some effect to make the testimonials move when hoover with mouse-->
+    <section id="testimonials" class="max-w-7xl mx-auto w-full p-8 text-center mt-10 ">
+        <h2 class="text-3xl font-bold mb-8">Testimonials</h2>
+        <div class="grid md:grid-cols-2 gap-8 mt-10 mb-10">
+            <article class="bg-white p-6 rounded-lg shadow-2xl">
+                <p class="text-gray-600 mb-4">"Great to work with, very professional."</p>
+                <h4 class="font-semibold">- Client Name</h4>
             </article>
-            <article class="bg-white p-4 rounded-lg shadow">
-                <h1 class="font-semibold text-lg mb-2">Some title </h1>
-                <p class="text-gray-600 text-base sm:text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing
-                    elit. Repellendus aspernatur esse quos nihil
-                    necessitatibus voluptatibus, corporis est iste! Saepe recusandae nihil architecto at eveniet
-                    reiciendis numquam eum suscipit laboriosam minima.</p>
+            <article class="bg-white p-6 rounded-lg shadow-2xl">
+                <p class="text-gray-600 mb-4">"Great to work with, very professional."</p>
+                <h4 class="font-semibold">- Client Name</h4>
             </article>
-            <article class="bg-white p-4 rounded-lg shadow">
-                <h1 class="font-semibold text-lg mb-2">Some title </h1>
-                <p class="text-gray-600 text-base sm:text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing
-                    elit. Repellendus aspernatur esse quos nihil
-                    necessitatibus voluptatibus, corporis est iste! Saepe recusandae nihil architecto at eveniet
-                    reiciendis numquam eum suscipit laboriosam minima.</p>
+            <article class="bg-white p-6 rounded-lg shadow-2xl">
+                <p class="text-gray-600 mb-4">"Great to work with, very professional."</p>
+                <h4 class="font-semibold">- Client Name</h4>
             </article>
-    </div>
-</section>
+            <article class="bg-white p-6 rounded-lg shadow-2xl">
+                <p class="text-gray-600 mb-4">"Delivered on time and exceeded expectations."</p>
+                <h4 class="font-semibold">- Client Name</h4>
+            </article>
+        </div>
+    </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-50 py-16">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12">
 
-<!-- Clients Section -->
-<section id="clients" class="max-w-7xl mx-auto w-full p-8 text-center bg-gray-50 py-16">
-    <h1 class="text-3xl sm:text-4xl font-bold mb-6">Happy Clients</h1>
-    <p class="text-gray-600 text-base sm:text-lg leading-relaxed mb-12">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse earum nihil id libero ut molestiae cumque quis
-        accusamus! Quasi, voluptatibus! Soluta aliquam aspernatur placeat eveniet totam deserunt odio neque quo?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, omnis temporibus aliquid earum nam eos fugiat,
-        maxime exercitationem, quae velit ducimus quos modi hic illum animi voluptatem? Illum, voluptatum ipsam.
-    </p>
+            <!-- Left side: Info + Cards -->
+            <div class="md:translate-y-10 py-16 bg-white rounded-lg p-8 shadow-2xl">
+                <h2 class="text-3xl font-bold mb-6">Let’s Discuss Your Project</h2>
+                <p class="text-gray-600 mb-8">
+                    Feel free to reach out with your project idea. I’ll be happy to discuss and help bring it to life.
+                </p>
 
-
-    <!-- Carousel WILL BE USED TO MAKE IMAGE IN INFINIT LOOP -->
-    <div class="flex flex-wrap items-center justify-center gap-8 mt-20 mb-10">
-        <img src="./images/google.png" alt="Google" class="h-12 w-auto object-contain">
-        <img src="./images/social.png" alt="Amazon" class="h-12 w-auto object-contain">
-        <img src="./images/netflix.png" alt="Netflix" class="h-12 w-auto object-contain">
-        <img src="./images/shield.png" alt="Brave" class="h-12 w-auto object-contain">
-        <img src="./images/linkedin (1).png" alt="LinkedIn" class="h-12 w-auto object-contain">
-    </div>
-</section>
-
-<!-- Testimonials Section will use some effect to make the testimonials move when hoover with mouse-->
-<section id="testimonials" class="max-w-7xl mx-auto w-full p-8 text-center mt-10 ">
-    <h2 class="text-3xl font-bold mb-8">Testimonials</h2>
-    <div class="grid md:grid-cols-2 gap-8 mt-10 mb-10">
-        <article class="bg-white p-6 rounded-lg shadow-2xl">
-            <p class="text-gray-600 mb-4">"Great to work with, very professional."</p>
-            <h4 class="font-semibold">- Client Name</h4>
-        </article>
-        <article class="bg-white p-6 rounded-lg shadow-2xl">
-            <p class="text-gray-600 mb-4">"Great to work with, very professional."</p>
-            <h4 class="font-semibold">- Client Name</h4>
-        </article>
-        <article class="bg-white p-6 rounded-lg shadow-2xl">
-            <p class="text-gray-600 mb-4">"Great to work with, very professional."</p>
-            <h4 class="font-semibold">- Client Name</h4>
-        </article>
-        <article class="bg-white p-6 rounded-lg shadow-2xl">
-            <p class="text-gray-600 mb-4">"Delivered on time and exceeded expectations."</p>
-            <h4 class="font-semibold">- Client Name</h4>
-        </article>
-    </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact" class="bg-gray-50 py-16">
-    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12">
-
-        <!-- Left side: Info + Cards -->
-        <div class="md:translate-y-10 py-16 bg-white rounded-lg p-8 shadow-2xl">
-            <h2 class="text-3xl font-bold mb-6">Let’s Discuss Your Project</h2>
-            <p class="text-gray-600 mb-8">
-                Feel free to reach out with your project idea. I’ll be happy to discuss and help bring it to life.
-            </p>
-
-            <!-- Info Cards -->
-            <div class="space-y-4">
-                <div
-                    class="bg-white p-4 rounded-lg shadow flex items-center gap-4 hover:bg-purple-200 transition shadow-md">
-                    <img src="./images/location.png" alt="Location" class="h-12 w-auto object-contain">
-                    <div>
-                        <h3 class="font-semibold">Location</h3>
-                        <p class="text-gray-600">Czestochowa, Poland</p>
+                <!-- Info Cards -->
+                <div class="space-y-4">
+                    <div
+                        class="bg-white p-4 rounded-lg shadow flex items-center gap-4 hover:bg-purple-200 transition shadow-md">
+                        <img src="./images/location.png" alt="Location" class="h-12 w-auto object-contain">
+                        <div>
+                            <h3 class="font-semibold">Location</h3>
+                            <p class="text-gray-600">Czestochowa, Poland</p>
+                        </div>
                     </div>
-                </div>
 
-                <div
-                    class="bg-white p-4 rounded-lg shadow flex items-center gap-4 hover:bg-purple-200 transition shadow-md">
-                    <img src="./images/telephone.png" alt="telephone" class="h-12 w-auto object-contain">
-                    <div>
-                        <h3 class="font-semibold">Phone</h3>
-                        <p class="text-gray-600">+48 502-742-941</p>
+                    <div
+                        class="bg-white p-4 rounded-lg shadow flex items-center gap-4 hover:bg-purple-200 transition shadow-md">
+                        <img src="./images/telephone.png" alt="telephone" class="h-12 w-auto object-contain">
+                        <div>
+                            <h3 class="font-semibold">Phone</h3>
+                            <p class="text-gray-600">+48 502-742-941</p>
+                        </div>
                     </div>
-                </div>
 
-                <div
-                    class="bg-white p-4 rounded-lg shadow flex items-center gap-4 hover:bg-purple-200 transition shadow-md">
-                    <img src="./images/mail.png" alt="Email" class="h-12 w-auto object-contain">
-                    <div>
-                        <h3 class="font-semibold">Email</h3>
-                        <p class="text-gray-600">maxmendesnoah1991@gmail.com</p>
+                    <div
+                        class="bg-white p-4 rounded-lg shadow flex items-center gap-4 hover:bg-purple-200 transition shadow-md">
+                        <img src="./images/mail.png" alt="Email" class="h-12 w-auto object-contain">
+                        <div class="min-w-0"> <!-- important: allow flex child to shrink -->
+                            <h3 class="font-semibold">Email</h3>
+                            <p class="text-gray-600 break-all">maxmendesnoah1991@gmail.com</p>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Right side: Form -->
+            <form class="bg-white p-8 rounded-lg shadow flex flex-col gap-4 md:translate-y-10 shadow-2xl">
+                <p class="text-gray-600 mt-10 mb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+                    quaerat
+                    earum ducimus,
+                    repellat eveniet eum est consequuntur possimus suscipit quibusdam commodi facere odit similique,
+                </p>
+                <input type=" text" placeholder="Name"
+                    class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-600">
+                <input type="email" placeholder="Email"
+                    class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-600">
+                <textarea placeholder="Message" rows="4"
+                    class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-600"></textarea>
+                <button type="submit"
+                    class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium transition shadow-md">
+                    Send Message
+                </button>
+            </form>
+
         </div>
-
-        <!-- Right side: Form -->
-        <form class="bg-white p-8 rounded-lg shadow flex flex-col gap-4 md:translate-y-10 shadow-2xl">
-            <p class="text-gray-600 mt-10 mb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quaerat
-                earum ducimus,
-                repellat eveniet eum est consequuntur possimus suscipit quibusdam commodi facere odit similique,
-            </p>
-            <input type=" text" placeholder="Name"
-                class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-600">
-            <input type="email" placeholder="Email"
-                class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-600">
-            <textarea placeholder="Message" rows="4"
-                class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-600"></textarea>
-            <button type="submit"
-                class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium transition shadow-md">
-                Send Message
-            </button>
-        </form>
-
-    </div>
-</section>
+    </section>
 
 
 
-<footer id="footer" class="bg-gray-600 text-gray-400 py-20">
-    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-        <p>&copy; 2025 Max Mendes. All rights reserved.</p>
+    <footer id="footer" class="bg-gray-600 text-gray-400 py-20">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <p>&copy; 2025 Max Mendes. All rights reserved.</p>
 
-        <div class="flex gap-6 mt-4 md:mt-0">
-            <a href="#" class="flex items-center gap-2 hover:text-white">
-                <img src="./images/twitter (1).png" alt="Twitter" class="h-5 w-5">
-                Twitter
-            </a>
-            <a href="#" class="flex items-center gap-2 hover:text-white">
-                <img src="./images/linkedin.png" alt="LinkedIn" class="h-5 w-5">
-                LinkedIn
-            </a>
-            <a href="#" class="flex items-center gap-2 hover:text-white">
-                <img src="./images/github.png" alt="GitHub" class="h-5 w-5">
-                GitHub
-            </a>
+            <div class="flex gap-6 mt-4 md:mt-0">
+                <a href="#" class="flex items-center gap-2 hover:text-white">
+                    <img src="./images/twitter (1).png" alt="Twitter" class="h-5 w-5">
+                    Twitter
+                </a>
+                <a href="#" class="flex items-center gap-2 hover:text-white">
+                    <img src="./images/linkedin.png" alt="LinkedIn" class="h-5 w-5">
+                    LinkedIn
+                </a>
+                <a href="#" class="flex items-center gap-2 hover:text-white">
+                    <img src="./images/github.png" alt="GitHub" class="h-5 w-5">
+                    GitHub
+                </a>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
 
 </body>
