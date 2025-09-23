@@ -9,8 +9,8 @@
     <title>MyPortfolio</title>
 </head>
 
-<br class="bg-gray-100">
-<header class="bg-white shadow-md relative">
+<body class="bg-gray-100">
+<header class="sticky top-0 z-50 bg-white shadow-md">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
         <!-- Logo -->
         <div class="text-xl font-bold text-gray-800">
@@ -20,37 +20,43 @@
         <!-- Desktop Menu -->
         <nav class="hidden md:block">
             <ul class="flex items-center gap-6 text-gray-500 font-semibold">
-                <li><a href="#" class="hover:text-purple-600 transition">Home</a></li>
-                <li><a href="#" class="hover:text-purple-600 transition">About</a></li>
-                <li><a href="#" class="hover:text-purple-600 transition">Projects</a></li>
-                <li><a href="#" class="hover:text-purple-600 transition">Portfolio</a></li>
-                <li><a href="#" class="hover:text-purple-600 transition">Blog</a></li>
-                <li><a href="#" class="hover:text-purple-600 transition">Services</a></li>
+                <li><a href="#hero" class="hover:text-purple-600 transition">Home</a></li>
+                <li><a href="#about" class="hover:text-purple-600 transition">About</a></li>
+                <li><a href="#work-process" class="hover:text-purple-600 transition">Work Process</a></li>
+                <li><a href="#portfolio" class="hover:text-purple-600 transition">Portfolio</a></li>
+                <li><a href="#services" class="hover:text-purple-600 transition">Services</a></li>
+                <li><a href="#clients" class="hover:text-purple-600 transition">Clients</a></li>
+                <li><a href="#testimonials" class="hover:text-purple-600 transition">Testimonials</a></li>
+                <li><a href="#blog" class="hover:text-purple-600 transition">Blog</a></li>
             </ul>
         </nav>
         <div class="flex items-center gap-4">
-            <button class="bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded shadow-md transition">
+            <a href="#contact"
+                class="bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded shadow-md transition">
                 Contact
-            </button>
+            </a>
 
             <!-- Mobile toggle button -->
             <button id="menu-btn" class="md:hidden bg-gray-500 text-white px-3 py-2 rounded">
                 ☰
             </button>
         </div>
-    </div>
-    <nav id="mobile-menu"
-        class="hidden fixed inset-0 bg-gradient-to-b from-white/80 to-purple-200/90 backdrop-blur-md z-50 flex flex-col items-center justify-center gap-8 text-gray-800 text-lg font-semibold">
-        <a href="#" class="hover:text-purple-600 transition">Home</a>
-        <a href="#" class="hover:text-purple-600 transition">About</a>
-        <a href="#" class="hover:text-purple-600 transition">Projects</a>
-        <a href="#" class="hover:text-purple-600 transition">Portfolio</a>
-        <a href="#" class="hover:text-purple-600 transition">Blog</a>
-        <a href="#" class="hover:text-purple-600 transition">Services</a>
-        <button class="mt-4 bg-purple-500 hover:bg-purple-600 text-white px-6 py-2 rounded shadow-md transition">
-            Contact
-        </button>
-    </nav>
+
+        <!-- Mobile Menu -->
+        <nav id="mobile-menu"
+            class="hidden fixed inset-0 bg-gradient-to-b from-white/80 to-purple-200/90 backdrop-blur-md z-50 flex flex-col items-center justify-center gap-8 text-gray-800 text-lg font-semibold">
+            <a href="#hero" class="hover:text-purple-600 transition">Home</a>
+            <a href="#about" class="hover:text-purple-600 transition">About</a>
+            <a href="#work-process" class="hover:text-purple-600 transition">Work Process</a>
+            <a href="#portfolio" class="hover:text-purple-600 transition">Portfolio</a>
+            <a href="#services" class="hover:text-purple-600 transition">Services</a>
+            <a href="#clients" class="hover:text-purple-600 transition">Clients</a>
+            <a href="#testimonials" class="hover:text-purple-600 transition">Testimonials</a>
+            <a href="#blog" class="hover:text-purple-600 transition">Blog</a>
+            <button class="mt-4 bg-purple-500 hover:bg-purple-600 text-white px-6 py-2 rounded shadow-md transition">
+                <a href="#contact">Contact</a>
+            </button>
+        </nav>
 </header>
 
 
@@ -92,9 +98,9 @@
     </section>
 
 
-    <section class="flex justify-center">
+    <div class="flex justify-center">
         <img class="w-full max-w-sm rounded shadow-lg object-cover" src="./images/max.png" alt="Imagem de pessoa">
-    </section>
+    </div>
 </main>
 <!-- --------ABout me------- -->
 <section id="about"
@@ -212,85 +218,97 @@
 
 
 <!-- TITLE FOR Portfolio -->
-<section id="portfolio-title" class="max-w-7xl mx-auto w-full p-4 text-center">
-    <h1 class="text-4xl font-bold mb-5 mt-20">Portfolio</h1>
-    <p class="text-gray-500 max-w-2xl mx-auto mb-10">
-        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.
-    </p>
-</section>
-<section id="portfolio" class="w-full  flex items-center justify-center bg-gray-100">
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mt-10">
+<!-- Combined Portfolio Section -->
+<section id="portfolio" class="max-w-7xl mx-auto w-full p-4">
+    <!-- Title Section -->
+    <div class="text-center">
+        <h1 class="text-4xl font-bold mb-5 mt-20">Portfolio</h1>
+        <p class="text-gray-500 max-w-2xl mx-auto mb-10">
+            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.
+        </p>
+    </div>
 
+    <!-- Projects Grid Section -->
+    <div class="w-full flex items-center justify-center bg-gray-100 rounded-lg p-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mt-10">
+            <!-- Project Card 1 -->
+            <article class="bg-white rounded-lg shadow-md overflow-hidden p-4">
+                <img src="image.jpg" alt="Descriptive text" class="w-full h-40 object-cover rounded-md">
+                <p class="text-sm text-purple-500 mt-2">Product Admin Dashboard</p>
+                <h2 class="text-lg font-semibold mt-1">Project Title</h2>
+                <p class="text-gray-600 text-sm mt-1">This is a paragraph describing the card content</p>
+                <button
+                    class="mt-4 px-6 py-3 rounded-lg border-2 border-purple-300 text-purple-700 hover:bg-purple-200 font-medium transition">
+                    Case Study ➔
+                </button>
+            </article>
 
+            <!-- Project Card 2 -->
+            <article class="bg-white rounded-lg shadow-md overflow-hidden p-4">
+                <img src="image.jpg" alt="Descriptive text" class="w-full h-40 object-cover rounded-md">
+                <p class="text-sm text-purple-500 mt-2">Product Admin Dashboard</p>
+                <h2 class="text-lg font-semibold mt-1">Project Title</h2>
+                <p class="text-gray-600 text-sm mt-1">This is a paragraph describing the card content</p>
+                <button
+                    class="mt-4 px-6 py-3 rounded-lg border-2 border-purple-300 text-purple-700 hover:bg-purple-50 font-medium transition">
+                    Case Study ➔
+                </button>
+            </article>
 
-        <!-- Projects display section -->
-        <article class="bg-white rounded-lg shadow-md overflow-hidden p-4">
-            <img src="image.jpg" alt="Descriptive text" class="w-full h-40 object-cover rounded-md">
-            <p class="text-sm text-purple-500 mt-2">Product Admin Dashboard</p>
-            <h2 class="text-lg font-semibold mt-1">Project Title</h2>
-            <p class="text-gray-600 text-sm mt-1">This is a paragraph describing the card content</p>
-            <button
-                class="mt-4 px-6 py-3 rounded-lg border-2 border-purple-300 text-purple-700 hover:bg-purple-200 font-medium transition">
-                Case Study ➔
-            </button>
-        </article>
-        <article class="bg-white rounded-lg shadow-md overflow-hidden p-4">
-            <img src="image.jpg" alt="Descriptive text" class="w-full h-40 object-cover rounded-md">
-            <p class="text-sm text-purple-500 mt-2">Product Admin Dashboard</p>
-            <h2 class="text-lg font-semibold mt-1">Project Title</h2>
-            <p class="text-gray-600 text-sm mt-1">This is a paragraph describing the card content</p>
-            <button
-                class="mt-4 px-6 py-3 rounded-lg border-2 border-purple-300 text-purple-700 hover:bg-purple-50 font-medium transition">
-                Case Study ➔
-            </button>
-        </article>
-        <article class="bg-white rounded-lg shadow-md overflow-hidden p-4">
-            <img src="image.jpg" alt="Descriptive text" class="w-full h-40 object-cover rounded-md">
-            <p class="text-sm text-purple-500 mt-2">Product Admin Dashboard</p>
-            <h2 class="text-lg font-semibold mt-1">Project Title</h2>
-            <p class="text-gray-600 text-sm mt-1">This is a paragraph describing the card content</p>
-            <button
-                class="mt-4 px-6 py-3 rounded-lg border-2 border-purple-300 text-purple-700 hover:bg-purple-50 font-medium transition">
-                Case Study ➔
-            </button>
-        </article>
+            <!-- Project Card 3 -->
+            <article class="bg-white rounded-lg shadow-md overflow-hidden p-4">
+                <img src="image.jpg" alt="Descriptive text" class="w-full h-40 object-cover rounded-md">
+                <p class="text-sm text-purple-500 mt-2">Product Admin Dashboard</p>
+                <h2 class="text-lg font-semibold mt-1">Project Title</h2>
+                <p class="text-gray-600 text-sm mt-1">This is a paragraph describing the card content</p>
+                <button
+                    class="mt-4 px-6 py-3 rounded-lg border-2 border-purple-300 text-purple-700 hover:bg-purple-50 font-medium transition">
+                    Case Study ➔
+                </button>
+            </article>
 
-        <article class="bg-white rounded-lg shadow-md overflow-hidden p-4">
-            <img src="image.jpg" alt="Descriptive text" class="w-full h-40 object-cover rounded-md">
-            <p class="text-sm text-purple-500 mt-2">Product Admin Dashboard</p>
-            <h2 class="text-lg font-semibold mt-1">Project Title</h2>
-            <p class="text-gray-600 text-sm mt-1">This is a paragraph describing the card content</p>
-            <button
-                class="mt-4 px-6 py-3 rounded-lg border-2 border-purple-300 text-purple-700 hover:bg-purple-50 font-medium transition">
-                Case Study ➔
-            </button>
-        </article>
+            <!-- Project Card 4 -->
+            <article class="bg-white rounded-lg shadow-md overflow-hidden p-4">
+                <img src="image.jpg" alt="Descriptive text" class="w-full h-40 object-cover rounded-md">
+                <p class="text-sm text-purple-500 mt-2">Product Admin Dashboard</p>
+                <h2 class="text-lg font-semibold mt-1">Project Title</h2>
+                <p class="text-gray-600 text-sm mt-1">This is a paragraph describing the card content</p>
+                <button
+                    class="mt-4 px-6 py-3 rounded-lg border-2 border-purple-300 text-purple-700 hover:bg-purple-50 font-medium transition">
+                    Case Study ➔
+                </button>
+            </article>
 
-        <article class="bg-white rounded-lg shadow-md overflow-hidden p-4">
-            <img src="image.jpg" alt="Descriptive text" class="w-full h-40 object-cover rounded-md">
-            <p class="text-sm text-purple-500 mt-2">Product Admin Dashboard</p>
-            <h2 class="text-lg font-semibold mt-1">Project Title</h2>
-            <p class="text-gray-600 text-sm mt-1">This is a paragraph describing the card content</p>
-            <button
-                class="mt-4 px-6 py-3 rounded-lg border-2 border-purple-300 text-purple-700 hover:bg-purple-50 font-medium transition">
-                Case Study ➔
-            </button>
-        </article>
+            <!-- Project Card 5 -->
+            <article class="bg-white rounded-lg shadow-md overflow-hidden p-4">
+                <img src="image.jpg" alt="Descriptive text" class="w-full h-40 object-cover rounded-md">
+                <p class="text-sm text-purple-500 mt-2">Product Admin Dashboard</p>
+                <h2 class="text-lg font-semibold mt-1">Project Title</h2>
+                <p class="text-gray-600 text-sm mt-1">This is a paragraph describing the card content</p>
+                <button
+                    class="mt-4 px-6 py-3 rounded-lg border-2 border-purple-300 text-purple-700 hover:bg-purple-50 font-medium transition">
+                    Case Study ➔
+                </button>
+            </article>
 
-        <article class="bg-white rounded-lg shadow-md overflow-hidden p-4">
-            <img src="image.jpg" alt="Descriptive text" class="w-full h-40 object-cover rounded-md">
-            <p class="text-sm text-purple-500 mt-2">Product Admin Dashboard</p>
-            <h2 class="text-lg font-semibold mt-1">Project Title</h2>
-            <p class="text-gray-600 text-sm mt-1">This is a paragraph describing the card content</p>
+            <!-- Project Card 6 -->
+            <article class="bg-white rounded-lg shadow-md overflow-hidden p-4">
+                <img src="image.jpg" alt="Descriptive text" class="w-full h-40 object-cover rounded-md">
+                <p class="text-sm text-purple-500 mt-2">Product Admin Dashboard</p>
+                <h2 class="text-lg font-semibold mt-1">Project Title</h2>
+                <p class="text-gray-600 text-sm mt-1">This is a paragraph describing the card content</p>
+                <button
+                    class="mt-4 px-6 py-3 rounded-lg border-2 border-purple-300 text-purple-700 hover:bg-purple-50 font-medium transition">
+                    Case Study ➔
+                </button>
+            </article>
+
+            <!-- More Projects Button -->
             <button
-                class="mt-4 px-6 py-3 rounded-lg border-2 border-purple-300 text-purple-700 hover:bg-purple-50 font-medium transition">
-                Case Study ➔
+                class="col-span-full justify-self-center mt-6 bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium transition shadow-md">
+                More Projects
             </button>
-        </article>
-        <button
-            class="col-span-full justify-self-center mt-6 bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium transition shadow-md">
-            More Projects
-        </button>
+        </div>
     </div>
 </section>
 
@@ -501,11 +519,12 @@
 
         <!-- Right side: Form -->
         <form class="bg-white p-8 rounded-lg shadow flex flex-col gap-4 md:translate-y-10 shadow-2xl">
-            <p class="text-gray-600 mt-10 mb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quaerat earum ducimus, 
-                repellat eveniet eum est consequuntur possimus suscipit quibusdam commodi facere odit similique, 
+            <p class="text-gray-600 mt-10 mb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quaerat
+                earum ducimus,
+                repellat eveniet eum est consequuntur possimus suscipit quibusdam commodi facere odit similique,
             </p>
             <input type=" text" placeholder="Name"
-            class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-600">
+                class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-600">
             <input type="email" placeholder="Email"
                 class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-600">
             <textarea placeholder="Message" rows="4"
